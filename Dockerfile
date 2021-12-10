@@ -5,6 +5,7 @@ RUN git clone https://github.com/application-research/estuary . && \
     git reset --hard 58cf9b2837187fded29ad183bb551922842e02fc && \
     make clean all
 COPY start.sh /usr/src/estuary/start.sh
+RUN chmod +x /usr/src/estuary/start.sh
 CMD /usr/src/estuary/start.sh
 
 
