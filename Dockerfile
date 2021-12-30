@@ -1,4 +1,4 @@
-FROM golang:1.16.11-stretch
+FROM golang:1-stretch
 RUN apt-get update && apt-get install -y wget jq hwloc ocl-icd-opencl-dev git libhwloc-dev pkg-config make
 WORKDIR /usr/src/estuary
 RUN git clone https://github.com/application-research/estuary . && \
